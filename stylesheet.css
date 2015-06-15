@@ -50,7 +50,7 @@ html, body{
 
 .centerpiece #leftNavigation p {
     color:#FFFFFF;
-    font-size: 2.1em;
+    font-size: 34px;
     font-family: "Nixie One"; 
     margin-top: 158px; /*HEY  CAL :D*/
 
@@ -72,7 +72,7 @@ html, body{
 
 .centerpiece #rightNavigation p {
     color:#FFFFFF;
-    font-size: 2.1em;
+    font-size: 34px;
     font-family: "Nixie One";
     margin-top:-252px;
 
@@ -389,13 +389,13 @@ html, body{
     }
 
     .centerpiece #leftNavigation p {
-        font-size: 1.6em;
+        font-size: 26px;
         margin-top: 136px;
 
     }
 
     .centerpiece #rightNavigation p {
-        font-size: 1.6em;
+        font-size: 26px;
         margin-top: -222px;
     }
 
@@ -465,25 +465,25 @@ html, body{
     }
 
     .centerpiece #leftNavigation #about {
-        font-size: 2em;
+        font-size: 32px;
         margin-top: 247%;
-        margin-left: -20%;
+        margin-left: -5%;
     }
 
     .centerpiece #leftNavigation #blog{
-        font-size: 2em;
+        font-size: 32px;
         margin-top: 255%;
         margin-left: -235%;  
     }
 
     .centerpiece #rightNavigation #cv {
-        font-size: 2em;
+        font-size: 32px;
         margin-top: -285%;
         margin-right: -470%;
     }
 
     .centerpiece #rightNavigation #contact {
-        font-size: 2em;
+        font-size: 32px;
         margin-top: -48%;
         margin-right: -17%;
     }
@@ -502,19 +502,19 @@ html, body{
 
     /* Background strip */
     .centerpiece { 
-        height: 54vw; 
+        height: 54vw;
     }
 
     .centerpiece #leftNavigation #about {
         font-size: 4.9vw;
         margin-top: 43.2vw;
-        margin-left: -4vw;
+        margin-left: -2vw;
     }
 
     .centerpiece #leftNavigation #blog{
         font-size: 4.9vw;
         margin-top: 34.8vw;
-        margin-left: -28vw;
+        margin-left: -31vw;
     }
 
     .centerpiece #rightNavigation #cv {
