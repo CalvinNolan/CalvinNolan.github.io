@@ -346,17 +346,16 @@ html, body{
 }
 
 /* Return Button */
-#return{
-    margin: 0 auto;
+#return {
+    display: inline-block;
     margin-top: 20px;
+    margin-left: 555px;
 
     position: relative;
     z-index: 10;
 
     opacity: 0;
 
-    width: 0; 
-    height: 0; 
     border-left: 0px solid transparent;
     border-right: 0px solid transparent;
     
@@ -434,6 +433,10 @@ html, body{
         margin-left:10%;
     }
 
+    #return {
+        margin-left: 455px;
+    }
+
 }
 
 @media (max-width: 1040px) {
@@ -493,6 +496,10 @@ html, body{
     #aboutBody, #cvBody, #blogBody, #contactBody {
         width: 690px;
         margin-left:-19%;
+    }
+
+    #return {
+        margin-left: 205px;
     }
 }
 
@@ -556,5 +563,9 @@ html, body{
     #aboutBody, #cvBody, #blogBody, #contactBody {
         width: 83vw;
         margin-left:-9%;
+    }
+
+    #return {
+        margin-left: 28vw;
     }
 }
