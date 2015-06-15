@@ -242,7 +242,7 @@ bodyHandler = (function () {
 			};
 
 			elevator.elevate();
-			setTimeout(remove, 1700);
+			window.setTimeout(remove, 1700);
 			fadeAll();
 
 		});
