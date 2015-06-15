@@ -466,36 +466,37 @@ html, body{
     }
 
     .centerpiece #leftNavigation #about {
-        font-size: 32px;
-        margin-top: 247%;
-        margin-left: -5%;
+        font-size: 45px;
+        margin-top: 170%;
+        margin-left: -30%;
+        /* 247, -5*/
     }
 
     .centerpiece #leftNavigation #blog{
-        font-size: 32px;
-        margin-top: 255%;
-        margin-left: -235%;  
+        font-size: 45px;
+        margin-top: 160%;
+        margin-left: -240%;  
     }
 
     .centerpiece #rightNavigation #cv {
-        font-size: 32px;
-        margin-top: -285%;
-        margin-right: -470%;
+        font-size: 45px;
+        margin-top: -246%;
+        margin-right: -430%;
     }
 
     .centerpiece #rightNavigation #contact {
-        font-size: 32px;
-        margin-top: -48%;
-        margin-right: -17%;
+        font-size: 45px;
+        margin-top: -40%;
+        margin-right: -42%;
     }
 
     #aboutBody, #cvBody, #blogBody, #contactBody {
-        width: 550px;
-        margin-left:-5%;
+        width: 690px;
+        margin-left:-19%;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 740px) {
     .container {
         width: 76vw;
         margin: 0 auto;
@@ -521,7 +522,7 @@ html, body{
     .centerpiece #rightNavigation #cv {
         font-size: 4.9vw;
         margin-top: -20vw;
-        margin-left: 0vw;
+        margin-left: 1.2vw;
     }
 
     .centerpiece #rightNavigation #contact {
@@ -554,6 +555,6 @@ html, body{
 
     #aboutBody, #cvBody, #blogBody, #contactBody {
         width: 83vw;
-        margin-left:-5%;
+        margin-left:-9%;
     }
 }
