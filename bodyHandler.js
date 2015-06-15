@@ -236,12 +236,10 @@ bodyHandler = (function () {
 				duration: 1700
 			});
 
-			elevator.elevate();
-			window.setTimeout(function(){
-				console.log("Hey");
-    			removeAll();
-			}, 1700);
+			var remove = removeAll;
 
+			elevator.elevate();
+			setTimeout(remove, 1700);
 			fadeAll();
 
 		});
