@@ -236,7 +236,10 @@ bodyHandler = (function () {
 				duration: 1700
 			});
 
-			var remove = removeAll;
+			var remove = function() {
+				removeAll();
+				console.log("Test");
+			};
 
 			elevator.elevate();
 			setTimeout(remove, 1700);
