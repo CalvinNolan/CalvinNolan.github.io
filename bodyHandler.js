@@ -242,9 +242,8 @@ bodyHandler = (function () {
 			};
 
 			elevator.elevate();
-			/* window.setTimeout(remove, 1700); */
+			window.setTimeout(remove, 1700);
 			fadeAll();
-			remove();
 
 		});
 	};
