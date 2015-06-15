@@ -2,7 +2,7 @@ html, body{
     margin: 0px;
     padding: 0px;
     background-color: #FFF3E6;
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: none;
 }
 
 .container {
