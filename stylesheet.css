@@ -53,7 +53,6 @@ html, body{
     font-size: 2.1em;
     font-family: "Nixie One"; 
     margin-top: 158px; /*HEY  CAL :D*/
-    -webkit-backface-visibility: hidden;
 
     opacity: 0;
     -webkit-transition: opacity 2.2s ease-in;
@@ -76,7 +75,6 @@ html, body{
     font-size: 2.1em;
     font-family: "Nixie One";
     margin-top:-252px;
-    -webkit-backface-visibility: hidden;
 
     opacity: 0;
     -webkit-transition: opacity 2.2s ease-in;
@@ -128,8 +126,6 @@ html, body{
     width: 350px;
     border-radius: 50%;
     background-color: #FFF1E6;
-    /*background-image: url("wave.jpg");
-    background-size: cover;*/
 
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
        -moz-transform: rotate(-45deg); /* Firefox */
@@ -453,42 +449,43 @@ html, body{
         padding: 0;
     }
 
-    .centerpiece ul #leftNavigation {
+    .centerpiece ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .centerpiece ul #leftNavigation p {
         float: left;
         margin: 0;
     }
 
-    .centerpiece ul #rightNavigation {
+    .centerpiece ul #rightNavigation p {
         float: right;
         margin: 0;
     }
 
     .centerpiece #leftNavigation #about {
         font-size: 2em;
-        margin-top: 280px;
-        margin-left: 0px;
-        position: fixed;
+        margin-top: 247%;
+        margin-left: 7%;
     }
 
     .centerpiece #leftNavigation #blog{
         font-size: 2em;
-        margin-top: 225px;
-        margin-left: -70px;
-        position: fixed;
+        margin-top: 255%;
+        margin-left: -235%;  
     }
 
     .centerpiece #rightNavigation #cv {
         font-size: 2em;
-        margin-top: -130px;
-        margin-left: 21px;
-        position: fixed;
+        margin-top: -285%;
+        margin-right: -470%;
     }
 
     .centerpiece #rightNavigation #contact {
         font-size: 2em;
-        margin-top: -75px;
-        margin-left: -120px;
-        position: fixed;
+        margin-top: -48%;
+        margin-right: -17%;
     }
 
     #aboutBody, #cvBody, #blogBody, #contactBody {
@@ -511,29 +508,25 @@ html, body{
     .centerpiece #leftNavigation #about {
         font-size: 4.9vw;
         margin-top: 43.2vw;
-        margin-left: -2vw;
-        position: fixed;
+        margin-left: 0vw;
     }
 
     .centerpiece #leftNavigation #blog{
         font-size: 4.9vw;
         margin-top: 34.8vw;
-        margin-left: -11vw;
-        position: fixed;
+        margin-left: -33vw;
     }
 
     .centerpiece #rightNavigation #cv {
         font-size: 4.9vw;
         margin-top: -20vw;
-        margin-left: 3vw;
-        position: fixed;
+        margin-left: 0vw;
     }
 
     .centerpiece #rightNavigation #contact {
         font-size: 4.9vw;
         margin-top: -11.5vw;
-        margin-left: -19.5vw;
-        position: fixed;
+        margin-left: 0vw;
     }
     
     /* Rotated diamond in the centerpiece */
