@@ -1,0 +1,111 @@
+<!DOCTYPE>
+<html lang="en">
+	<head>
+		<title>Calvin Nolan</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" >		
+
+		<!-- JS -->
+		<script type="text/javascript" language="Javascript" src="jquery-1.11.3.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Nixie+One|Lato|Cutive+Mono|Poiret+One|Quattrocento|Muli' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="centerpiece">					
+			<div class="container">	
+
+				<ul>
+					<li id="leftNavigation">
+						<a id="aboutHide" href="#aboutBody">
+							<p id="about">ABOUT</p>
+						</a>
+					</li>
+
+					<li id="leftNavigation">
+						<a id="blogHide" href="#blogBody">
+							<p id="blog">BLOG</p>
+						</a>							
+					</li>
+
+					<li>
+						<div id="diamond">
+							<div id="circle">
+								<p id="letter">C</p>
+							</div>
+						</div>
+					</li>
+
+					<li id="rightNavigation">
+						<a id="contactHide" href="#contactBody">
+							<p id="contact">CONTACT</p>
+						</a>
+					</li>
+
+					<li id="rightNavigation">
+						<a id="cvHide" href="#cvBody">
+							<p id="cv">CV</p>
+						</a>
+					</li>					
+				</ul>	
+				
+				<div id="aboutBody">
+					<h3>About</h3>
+					<p>Hey! Looks like you've stumbled upon my website. What's that? You don't know who I am...? My name is Calvin Nolan. I'm a Computer Science student in Trinity College Dublin just trying to make some cool projects and learn as much as possible.</p>
+					<p>Yolo swaggins</p>
+					<p>Maybe put some projecty stuff here with some dank ass icons</p>
+				</div>
+
+				<div id="blogBody">
+					<p>Blog</p>
+				</div>
+
+				<div id="contactBody">
+					<p>Contact</p>
+				</div>
+
+				<div id="cvBody">
+					<p>CV</p>
+				</div>
+
+				<a href='#yolo' id="returnHide">
+					<div id="return">
+					</div>
+				</a>
+
+				<div id="sneakyBox">
+				</div>		
+
+			</div>		
+		</div>
+
+		<!-- JQuery Stuff -->
+		<script>
+			$(document).ready(function () {
+				/* Code for initial fading in of navigation bar */
+				$(".centerpiece #letter").addClass("load");
+				$(".centerpiece ul p").addClass("load");
+
+				/* Code for smooth scrolling upon button clicks */
+				$('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+				        || location.hostname == this.hostname) {
+
+				        var target = $(this.hash);
+				        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			            if (target.length) {
+			             	$('html,body').animate({
+			                 scrollTop: target.offset().top
+			            }, 1000);
+			            return false;
+				        }
+				    }
+				});
+			});
+		</script>
+
+		<script src="bodyHandler.js"></script>
+
+	</body>
+</html>

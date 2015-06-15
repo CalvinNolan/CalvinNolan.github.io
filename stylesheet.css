@@ -1,0 +1,563 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFF3E6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Background strip */
+.centerpiece {  
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background: #D0CABF;
+
+    top:50%; 
+
+    -webkit-transform: translate(0, -50%);  
+        -ms-transform: translate(0, -50%);
+       -moz-transform: translate(0, -50%);
+            transform: translate(0, -50%);   
+}
+
+/* Start of Navigation bar surrounding the centerpiece */
+.centerpiece ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.centerpiece ul #leftNavigation {
+    float:left;
+}
+
+.centerpiece ul #rightNavigation {
+    float:right;
+}
+
+.centerpiece li:nth-child(2) {
+    margin-left:60px;
+}
+
+.centerpiece li:nth-child(5) {
+    margin-right:220px;
+}
+
+.centerpiece #leftNavigation p {
+    color:#FFFFFF;
+    font-size: 2.1em;
+    font-family: "Nixie One"; 
+    margin-top: 158px; /*HEY  CAL :D*/
+
+    opacity: 0;
+    -webkit-transition: opacity 2.2s ease-in;
+       -moz-transition: opacity 2.2s ease-in;
+        -ms-transition: opacity 2.2s ease-in;
+         -o-transition: opacity 2.2s ease-in;
+            transition: opacity 2.2s ease-in;
+}
+
+.centerpiece #leftNavigation p.load {
+    opacity: 1;
+}
+
+.centerpiece #leftNavigation p:hover {
+    color: #4A355D;
+}
+
+.centerpiece #rightNavigation p {
+    color:#FFFFFF;
+    font-size: 2.1em;
+    font-family: "Nixie One";
+    margin-top:-252px;
+
+    opacity: 0;
+    -webkit-transition: opacity 2.2s ease-in;
+       -moz-transition: opacity 2.2s ease-in;
+        -ms-transition: opacity 2.2s ease-in;
+         -o-transition: opacity 2.2s ease-in;
+            transition: opacity 2.2s ease-in;
+}
+
+.centerpiece #rightNavigation p.load {
+    opacity: 1;
+}
+
+.centerpiece #rightNavigation p:hover {
+    color: #4A355D;
+}
+
+/* Rotated diamond in the centerpiece */
+.centerpiece #diamond {
+	height: 400px;
+	width: 400px;
+	background-color: #4A355D;
+
+    border-color: #FEFEFE;
+    border-width: 4px;
+    border-style: solid;
+	
+    margin-left: 50%;
+    top:5.3%;
+
+    position: relative;
+    z-index: 10;
+
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+       -moz-transform: rotate(45deg); /* Firefox */
+        -ms-transform: rotate(45deg); /* IE 9 */
+            transform: rotate(45deg);
+
+    -webkit-transform-origin: 34% -14%; /* Chrome, Safari, Opera */
+       -moz-transform-origin: 34% -14%; /* Firefox */
+        -ms-transform-origin: 34% -14%; /* IE 9 */
+            transform-origin: 34% -14%;  
+}
+
+/* Circle within the diamond in the centerpiece */
+.centerpiece #circle {
+	position: absolute;
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+	background-color: #FFF1E6;
+    /*background-image: url("wave.jpg");
+    background-size: cover;*/
+
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+       -moz-transform: rotate(-45deg); /* Firefox */
+        -ms-transform: rotate(-45deg); /* IE 9 */
+            transform: rotate(-45deg);
+
+    top:  6.25%;
+    right: 6.25%;
+
+}
+
+ /* Letter "C" within the circle + diamond in the centerpiece */
+.centerpiece #letter {
+    opacity: 0;
+	font-size: 150px;
+    font-family: "Poiret One";
+    color: #4A355D;
+    
+    margin-top: 25%;
+    margin-left: 32%;
+
+
+    -webkit-transition: opacity 1.5s ease-in;
+       -moz-transition: opacity 1.5s ease-in;
+        -ms-transition: opacity 1.5s ease-in;
+         -o-transition: opacity 1.5s ease-in;
+            transition: opacity 1.5s ease-in;
+}
+
+.centerpiece #letter.load {
+    opacity: 1;
+}
+
+/* Navigation bodies */
+/* About Body */
+#aboutHide {
+    text-decoration: none;
+}
+
+#about.currentlyOn{
+    border-bottom: 3px solid #4A355D;
+    padding-bottom: 1px;
+}
+
+#aboutBody {
+    background-color:#FFFFFF;
+    height: 0px;
+    width: 1000px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    margin-left:8.4%;
+
+    opacity: 0;
+
+    -webkit-transition: opacity .6s ease-in;
+       -moz-transition: opacity .6s ease-in;
+        -ms-transition: opacity .6s ease-in;
+         -o-transition: opacity .6s ease-in;
+            transition: opacity .6s ease-in;
+}
+
+#aboutBody.load {
+    height: 600px;
+    opacity: 1;
+}
+
+#aboutBody * {
+    display: none;
+}
+
+#aboutBody *.load {
+    display: block;
+}
+
+#aboutBody h3 {
+    font-family: 'Quattrocento';
+    font-size: 40px;
+    margin-left: 30px;
+    padding-left:10px;
+    margin-right:30px;
+    padding-bottom: 18px;
+
+    border-color: #4A355D;
+    border-width: 5px;
+    border-bottom-style: solid;
+}
+
+#aboutBody p {
+    font-family: 'Muli', 'Quattrocento';
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 18px;
+}
+
+/* Blog Body */
+#blogHide {
+    text-decoration: none;
+}
+
+#blog.currentlyOn{
+    border-bottom: 3px solid #4A355D;
+    padding-bottom: 1px;
+}
+
+#blogBody {
+    background-color:#FFFFFF;
+    height: 0px;
+    width: 1000px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-left:8.4%;
+
+    opacity: 0;
+
+    -webkit-transition: opacity .25s ease-in;
+       -moz-transition: opacity .25s ease-in;
+        -ms-transition: opacity .25s ease-in;
+         -o-transition: opacity .25s ease-in;
+            transition: opacity .25s ease-in;
+}
+
+#blogBody.load {
+    height:700px;
+    opacity: 1;
+}
+
+#blogBody * {
+    display: none;
+}
+
+#blogBody *.load {
+    display: inline;
+}
+
+/* Contact Body */
+#contactHide {
+    text-decoration: none;
+}
+
+#contact.currentlyOn{
+    border-bottom: 3px solid #4A355D;
+    padding-bottom: 1px;
+}
+
+#contactBody {
+    background-color:#FFFFFF;
+    height: 0px;
+    width: 1000px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-left:8.4%;
+
+    opacity: 0;
+
+    -webkit-transition: opacity .25s ease-in;
+       -moz-transition: opacity .25s ease-in;
+        -ms-transition: opacity .25s ease-in;
+         -o-transition: opacity .25s ease-in;
+            transition: opacity .25s ease-in;
+}
+
+#contactBody.load {
+    height: 700px;
+    opacity: 1;
+}
+
+#contactBody * {
+    display: none;
+}
+
+#contactBody *.load {
+    display: inline;
+}
+
+/* CV Body */
+#cvHide {
+    text-decoration: none;
+}
+
+#cv.currentlyOn{
+    border-bottom: 3px solid #4A355D;
+    padding-bottom: 1px;
+}
+
+#cvBody {
+    background-color:#FFFFFF;
+    height:0px;
+    width: 1000px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-left:8.4%;
+
+    opacity: 0;
+
+    -webkit-transition: opacity .25s ease-in;
+       -moz-transition: opacity .25s ease-in;
+        -ms-transition: opacity .25s ease-in;
+         -o-transition: opacity .25s ease-in;
+            transition: opacity .25s ease-in;
+}
+
+#cvBody.load {
+    height: 700px;
+    opacity: 1;
+}
+
+#cvBody * {
+    display: none;
+}
+
+#cvBody *.load {
+    display: inline;
+}
+
+/* Return Button */
+#return{
+    margin: 0 auto;
+    margin-top: 20px;
+
+    position: relative;
+    z-index: 10;
+
+    opacity: 0;
+
+    width: 0; 
+    height: 0; 
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    
+    border-bottom: 0px solid black;
+}
+
+#return.load {
+    opacity: 1;
+
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    
+    border-bottom: 45px solid #4A355D;
+}
+
+#sneakyBox{
+    height: 25px;
+    margin: 0 auto;
+}
+
+
+/* Media queries for mobile devices and tablets */
+@media (max-width: 1240px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    /* Background strip */
+    .centerpiece { 
+        height: 350px;  
+    }
+
+    .centerpiece #leftNavigation p {
+        font-size: 1.6em;
+        margin-top: 136px;
+
+    }
+
+    .centerpiece #rightNavigation p {
+        font-size: 1.6em;
+        margin-top: -222px;
+    }
+
+    .centerpiece li:nth-child(2) {
+        margin-left:30px;
+    }
+
+    .centerpiece li:nth-child(5) {
+        margin-right:155px;
+    }
+
+    /* Rotated diamond in the centerpiece */
+    .centerpiece #diamond {
+        height: 350px;
+        width: 350px;
+    }
+
+    /* Circle within the diamond in the centerpiece */
+    .centerpiece #circle {
+        height: 300px;
+        width: 300px;
+
+        top:  7%;
+        right: 7%;
+    }
+
+     /* Letter "C" within the circle + diamond in the centerpiece */
+    .centerpiece #letter {
+        margin-top: 20%;
+        margin-left: 28.5%;
+    }
+
+    #aboutBody, #cvBody, #blogBody, #contactBody {
+        width: 800px;
+        margin-left:10%;
+    }
+
+}
+
+@media (max-width: 1040px) {
+
+    .container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .centerpiece ul {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .centerpiece ul #leftNavigation {
+        float: left;
+        margin: 0;
+    }
+
+    .centerpiece ul #rightNavigation {
+        float: right;
+        margin: 0;
+    }
+
+    .centerpiece #leftNavigation #about {
+        font-size: 2em;
+        margin-top: 280px;
+        margin-left: 0px;
+        position: fixed;
+    }
+
+    .centerpiece #leftNavigation #blog{
+        font-size: 2em;
+        margin-top: 225px;
+        margin-left: -70px;
+        position: fixed;
+    }
+
+    .centerpiece #rightNavigation #cv {
+        font-size: 2em;
+        margin-top: -130px;
+        margin-left: 21px;
+        position: fixed;
+    }
+
+    .centerpiece #rightNavigation #contact {
+        font-size: 2em;
+        margin-top: -75px;
+        margin-left: -120px;
+        position: fixed;
+    }
+
+    #aboutBody, #cvBody, #blogBody, #contactBody {
+        width: 550px;
+        margin-left:-3.3%;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 76vw;
+        margin: 0 auto;
+    }
+
+    /* Background strip */
+    .centerpiece { 
+        height: 54vw; 
+    }
+
+    .centerpiece #leftNavigation #about {
+        font-size: 4.9vw;
+        margin-top: 43.2vw;
+        margin-left: -2vw;
+        position: fixed;
+    }
+
+    .centerpiece #leftNavigation #blog{
+        font-size: 4.9vw;
+        margin-top: 34.8vw;
+        margin-left: -11vw;
+        position: fixed;
+    }
+
+    .centerpiece #rightNavigation #cv {
+        font-size: 4.9vw;
+        margin-top: -20vw;
+        margin-left: 3vw;
+        position: fixed;
+    }
+
+    .centerpiece #rightNavigation #contact {
+        font-size: 4.9vw;
+        margin-top: -11.5vw;
+        margin-left: -19.5vw;
+        position: fixed;
+    }
+    
+    /* Rotated diamond in the centerpiece */
+    .centerpiece #diamond {
+        height: 54vw;
+        width: 54vw;
+    }
+
+    /* Circle within the diamond in the centerpiece */
+    .centerpiece #circle {
+        height: 46.3vw;
+        width: 46.3vw;
+
+        top:  7%;
+        right: 7%;
+    }
+
+     /* Letter "C" within the circle + diamond in the centerpiece */
+    .centerpiece #letter {
+        font-size: 23vw;
+        margin-top: 20%;
+        margin-left: 28.5%;
+    }
+
+    #aboutBody, #cvBody, #blogBody, #contactBody {
+        width: 83vw;
+        margin-left:-4%;
+    }
+}
