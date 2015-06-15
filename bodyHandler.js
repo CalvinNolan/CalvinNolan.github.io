@@ -237,7 +237,8 @@ bodyHandler = (function () {
 			});
 
 			elevator.elevate();
-			setTimeout(function(){
+			window.setTimeout(function(){
+				console.log("Hey");
     			removeAll();
 			}, 1700);
 
