@@ -467,7 +467,7 @@ html, body{
     .centerpiece #leftNavigation #about {
         font-size: 2em;
         margin-top: 247%;
-        margin-left: 7%;
+        margin-left: -20%;
     }
 
     .centerpiece #leftNavigation #blog{
@@ -490,7 +490,7 @@ html, body{
 
     #aboutBody, #cvBody, #blogBody, #contactBody {
         width: 550px;
-        margin-left:-3.3%;
+        margin-left:-5%;
     }
 }
 
@@ -508,13 +508,13 @@ html, body{
     .centerpiece #leftNavigation #about {
         font-size: 4.9vw;
         margin-top: 43.2vw;
-        margin-left: 0vw;
+        margin-left: -4vw;
     }
 
     .centerpiece #leftNavigation #blog{
         font-size: 4.9vw;
         margin-top: 34.8vw;
-        margin-left: -33vw;
+        margin-left: -28vw;
     }
 
     .centerpiece #rightNavigation #cv {
@@ -553,6 +553,6 @@ html, body{
 
     #aboutBody, #cvBody, #blogBody, #contactBody {
         width: 83vw;
-        margin-left:-4%;
+        margin-left:-5%;
     }
 }
