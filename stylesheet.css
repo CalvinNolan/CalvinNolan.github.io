@@ -260,7 +260,57 @@ html, body{
 }
 
 #blogBody *.load {
-    display: inline;
+    display: block;
+}
+
+#blogBody h3 {
+    font-family: 'Quattrocento';
+    font-size: 40px;
+    margin-left: 30px;
+    padding-left:10px;
+    margin-right:30px;
+    padding-bottom: 18px;
+
+    border-color: #4A355D;
+    border-width: 5px;
+    border-bottom-style: solid;
+}
+
+.blogEntry {
+    margin-left: 60px;
+    padding-left: 10px;
+    margin-top: -30px;
+    clear: both;
+}
+
+.blogEntry a {
+    text-decoration: none;
+    margin-bottom: 80px;
+}
+
+.blogEntry img {
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    float: left;
+
+    border-color: #4A355D;
+    border-width: 1px;
+    border-style: solid;
+
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+       -moz-transform: rotate(-45deg); /* Firefox */
+        -ms-transform: rotate(-45deg); /* IE 9 */
+            transform: rotate(-45deg);
+}
+
+.blogEntry p {
+    font-family: 'Muli', 'Quattrocento';
+    font-size: 28px;
+    margin-left: 30px;
+    margin-top: 2px;
+    color: #000;
+    float: left;
 }
 
 /* Contact Body */
@@ -301,7 +351,20 @@ html, body{
 }
 
 #contactBody *.load {
-    display: inline;
+    display: block;
+}
+
+#contactBody h3 {
+    font-family: 'Quattrocento';
+    font-size: 40px;
+    margin-left: 30px;
+    padding-left:10px;
+    margin-right:30px;
+    padding-bottom: 18px;
+
+    border-color: #4A355D;
+    border-width: 5px;
+    border-bottom-style: solid;
 }
 
 /* CV Body */
@@ -342,7 +405,27 @@ html, body{
 }
 
 #cvBody *.load {
-    display: inline;
+    display: block;
+}
+
+#cvBody h3 {
+    font-family: 'Quattrocento';
+    font-size: 40px;
+    margin-left: 30px;
+    padding-left:10px;
+    margin-right:30px;
+    padding-bottom: 18px;
+
+    border-color: #4A355D;
+    border-width: 5px;
+    border-bottom-style: solid;
+}
+
+#cvBody p {
+    font-family: 'Muli', 'Quattrocento';
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 18px;
 }
 
 /* Return Button */
@@ -432,7 +515,7 @@ html, body{
         margin-left: 455px;
     }
 
-    #aboutBody p {
+    #aboutBody p, #blogBody p, #cvBody p, #contactBody p {
         font-size: 22px;
     }
 
