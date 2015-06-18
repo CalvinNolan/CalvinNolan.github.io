@@ -367,6 +367,13 @@ html, body{
     border-bottom-style: solid;
 }
 
+#contactBody p {
+    font-family: 'Muli', 'Quattrocento';
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 18px;
+}
+
 /* CV Body */
 #cvHide {
     text-decoration: none;
